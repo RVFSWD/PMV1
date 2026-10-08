@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuctionRS</title>
+    <link rel="stylesheet" type="text/css" href="./sample.css" />
+    <link rel="shortcut icon" type="image/jpg" href="photos/logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <!--navigation section-->
+    <header class="m-0 p-0 fixed-top">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-12">
+                    <nav id="logo" class="navbar nav-bar navbar-expand-lg pe-2">
+                        <a class="navbar-brand ps-lg-3 ps-1 py-2" href="./">
+                            <img src="./images_logo/auction_logo3_v2.png" height="50" class="d-inline-block align-top" alt="logo" />
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#nav-menu"
+                            aria-controls="nav-menu"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="nav-menu">
+                            <ul class="navbar-nav d-flex align-items-center ms-auto mb-2 mb-lg-0 pe-lg-4 pe-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="property.html">Properties</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Company
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                                      <li><a class="dropdown-item" href="agents.html">Agents</a></li>
+                                    </ul>
+                                  </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">Contact Us</a>
+                                </li>
+                                <li id="notLoggedIn" class="nav-item">
+                                    <a id="logInLink" class="nav-link" href="#signInModal" data-bs-toggle="modal" data-bs-target="#signInModal"
+                                        ><i class="bi bi-person-circle"></i> Sign In</a
+                                    >
+                                <li class="nav-item d-none" id="loggedIn">
+                                    <div class="dropdown">
+                                        <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img class="img-fluid login-avatar" src="#" alt="avatar" />
+                                        </a>
+                                        <ul class="dropdown-menu dmenu dropdown-menu-lg-end align-content-end text-lg-end text-center">
+                                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                                            <li><a id="logoutUser" class="dropdown-item" href="./">Log out</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> 
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--end of navigation section-->
+
+<!-- Showcase2 ###############-->
+
+<div class="showcase-section mt-5 pt-5 pb-5">
+    <div class="showcase-container container">
+      <div class="showcase-row row m-3">
+        <div class="showcase-image col-lg-6 col-md-12">
+          <img class="img-fluid" style="width: 750px;" height="400px" src="../images_home/house_01.jpg" alt="">
+        </div>
+        <div class="showcase-text col-lg-6 col-md-12 col-sm-12 align-self-center">
+          <h2>Exceptional Properties, Unrivaled Lifestyles.</h2>
+          <p>
+              Dedicated to innovating the luxury real estate industry, AuctionRS orchestrates transformative experiences through prestigious auctions and a global network of exceptional participants.
+          </p>
+          <a class="btn btn-outline-light" href="">See Properties</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- showcase 3 ######################  -->
+
+    <div class="about-section m-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 align-self-center">
+            <h1>Our Story</h1>
+            <p>
+              In the spirit of innovation, an exceptional luxury real estate company bearing the AuctionRS name was launched in 2024. Beyond the beautiful properties and the personal touch of our agents, only one brand can deliver a lifestyle that caters to you. With a network of homes for auction nationwide, our website lets you search properties in the philippines, and includes a large inventory of luxury homes for auction, including houses, condos, townhomes, villas, and more.
+            </p>
+            <a class="btn btn-outline-danger" href="">See Company</a>
+          </div>
+          <div class="about-image col-md-6 gy-5">
+            <img class="img-fluid" style="width: 750px;" height="400px" src="../images_home/house_2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <!--footer section-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-0 mt-5 svg-container">
+                    <img src="photos/wave.png" alt="footer design">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="footer">
+            <div class="row pt-3">
+                <div class="col-lg-4 col-md-12 col-12 text-center my-auto mx-auto">
+                    <p class="mt-2 h1 slogan">Bid, Win, Live Grand</p>
+                    <p class="mt-2 mb-lg-3 mb-md-4 mb-4 slogan-bot"> Your journey to luxury starts here</p>
+                </div>
+                <div class="col-lg-7 col-md-12 col-12 text-center my-auto mx-auto">
+                    <div class="row p-0 m-0">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3 ">
+                            <div class="footer-header h5 mb-sm-2 m-0 pt-lg-0 pt-md-3 pt-2">COMPANY</div>
+                            <div><a href="property.html">Properties</a></div>
+                            <div><a href="about-us.html">About Us</a></div>
+                            <div><a href="careers.html">Careers</a></div>
+                            <div><a href="agents.html">Agents</a></div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3">
+                            <div class="footer-header h5 mb-sm-2 m-0 pt-lg-0 pt-md-3 pt-2">LEGAL</div>
+                            <div><a href="#PrivacyPolicy" data-bs-toggle="modal" data-bs-target="#PrivacyPolicy">Privacy Policy</a></div>
+                            <div><a href="#TermsAndConditons" data-bs-toggle="modal" data-bs-target="#TermsAndConditons">Terms & Conditions</a></div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3 p-0">
+                            <div class="footer-header h5 mb-sm-2 m-0 pt-lg-0 pt-md-3 pt-2">HELP</div>
+                            <div><a href="contact-us.html">Contact Us</a></div>
+                            <div><a href="faqs.html">FAQs</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 p-0">
+                <div class="col-12 m-0 p-0">
+                    <div class="mb-3 text-center socials">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook px-2"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram px-2"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter px-2"></i></a>
+                        <a href="https://www.tiktok.com/en/" target="_blank"><i class="bi bi-tiktok px-2"></i></a>
+                    </div>
+                    <div class="col text-center pb-3">&copy; AuctionRS 2024 | All Rights Reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end of footer section-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
